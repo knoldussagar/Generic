@@ -39,7 +39,7 @@ class QueueTest extends AnyFlatSpec {
 
   it should "return nothing" in{
     val queue = new Queue[String](List())
-    val dequeued =queue.dequeue.toString
+    val dequeued = queue.dequeue.toString
     assertResult("Failure(java.lang.UnsupportedOperationException: tail of empty list)")(dequeued)
   }
 }
